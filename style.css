@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-pattern: 'Montserrat', sans-serif;
+  --font-stylish: 'Satisfy', cursive;
+
+  --green-dark: #466430;
+  --green: #6c9e45;
+  --white: #ffffff;
+  --gray: #f3f9e6;
+}
+
+body * {
+  font-family: var(--font-pattern);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100vw;
+
+  background-color: var(--gray);
+
+  /* border: 2px solid red; */
+
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+}
+
+header * {
+  text-transform: uppercase;
+}
+
+header img {
+  width: 9rem;
+
+  transition: 0.4s;
+}
+
+header img:hover {
+  transform: scale(0.8);
+}
+
+ul {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+ul * {
+  color: var(--green);
+
+}
+
+ul li:hover * {
+  color: var(--green-dark);
+
+  border-bottom: 2px solid var(--green-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+#donate {
+  border: 2px solid var(--green);
+
+  background-color: var(--green);
+  color: #ffffff;
+
+  padding: 1rem 2.4rem;
+
+  border-radius: 999px;
+
+  font-size: 1.6rem;
+
+  transition: 0.4s;
+}
+
+#donate:hover {
+  background-color: var(--gray);
+
+  border: 2px solid var(--green-dark);
+
+  color: var(--green-dark);
+
+  transform: scale(1.2);
+}
+
+main {
+  width: 100vw;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  /* height: 51rem; */
+}
+
+.text {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  bottom: 7rem;
+  left: 4rem;
+
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.text p span {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.text button {
+  width: fit-content;
+
+  background-color: var(--gray);
+  color: var(--green-dark);
+
+  border: var(--gray);
+  border-radius: 1rem;
+
+  padding: 1.8rem 2.2rem;
+
+  text-transform: uppercase;
+
+  font-size: 2rem;
+
+  transition: 0.4s;
+}
+
+.text button:hover {
+  background-color: transparent;
+  color: var(--gray);
+
+  transform: scale(1.4);
+
+}
